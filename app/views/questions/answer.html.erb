@@ -1,0 +1,27 @@
+<div class="container d-flex justify-content-center">
+  <div class="card p-5 shadow-lg" style="max-width: 600px;">
+
+    <h1 class="text-center mb-4 display-4 font-weight-bold text-primary">Stupid Coaching</h1>
+
+    <div class="my-3 text-center">
+      <p class="lead">
+        <strong><%= @question %></strong>
+        <br>
+        <em class="text-muted">- You</em>
+      </p>
+    </div>
+
+    <div class="my-3 py-4 text-center" style="background-color: #fff3cd; border-radius: 8px;">
+      <p class="lead">
+        <%= @coach_answer %>
+        <br>
+        <em class="text-muted">- Your Coach</em>
+      </p>
+    </div>
+
+    <div class="text-center">
+      <%= button_to "Ask a new question", ask_path, class: "btn btn-primary my-4 py-2 px-4 font-weight-bold", method: :get %>
+    </div>
+
+  </div>
+</div>
